@@ -1,4 +1,3 @@
-#include <Boards.h>
 #include <AccelStepper.h>
 
 byte analogPin;
@@ -40,11 +39,11 @@ void rotateStepper(char direction)
 {
   if (direction == 'r')
   {
-    currentPos += 100;
+    currentPos += 10;
     stepper.moveTo(currentPos);     
   } 
   else {
-    currentPos -= 100;
+    currentPos -= 10;
     stepper.moveTo(currentPos);
   }
 
